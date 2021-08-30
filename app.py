@@ -25,6 +25,10 @@ data = [
 def hello():
     return "Hello Flask-Herok"
 
+@pp.route('/hello/<string:name>')
+def hello():
+    return "สวัสดี"
+
 @app.route('/api', methods=['GET'])
 def get_api():
     return jsonify(data)
