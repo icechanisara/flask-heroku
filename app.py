@@ -27,7 +27,7 @@ def hello():
 
 @pp.route('/hello/<string:name>')
 def hello():
-    return "สวัสดี"
+    return "สวัสดี มาเอารัย"
 
 @app.route('/api', methods=['GET'])
 def get_api():
